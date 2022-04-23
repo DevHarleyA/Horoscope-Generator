@@ -6,7 +6,9 @@
 
 html {
     font-size: 62.5%;
-    background: url('images/spaceman.jpg');
+    background: url('images/bkgdpink.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .topBox {
@@ -18,7 +20,7 @@ html {
      color: purple;
 }
 
-button, input {
+button, select {
     background: papayawhip;
     border-radius: 7px;
     height: 35px;
@@ -41,4 +43,44 @@ button, input {
 
 #zodiacPic {
     height: 400px;
+}
+
+/* Media Queries */
+
+@media all and (max-width: 426px) {
+    .topBox {
+        height: 190px;
+        border: 5px solid plum;
+        font-size: 1.75rem;
+        background-color: palevioletred;
+        color: purple;
+        margin: 0;
+    }
+    .results {
+        background: palevioletred;
+        border: 5px solid plum;
+        margin: 0;
+        font-size: 2rem;
+        padding: 0;
+    }
+}
+
+@media (min-width: 315px) and (max-width: 425px) {
+    button, select {
+        background: papayawhip;
+        border-radius: 7px;
+        height: 54px;
+        width: 29%;
+        margin: 0;
+        color: purple;
+    }
+    .topBox {
+        height: 210px;
+    }
+    .moveForm {
+        margin-bottom: 2%;
+    }
+    html {
+        background-repeat: repeat;
+    }
 }

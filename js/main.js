@@ -1,7 +1,7 @@
 document.querySelector('#showMe').addEventListener('click', horoscopeTime)
 
 function horoscopeTime() {
-    const month = document.querySelector('#month').value.toLowerCase()
+    const month = document.querySelector('#month').value
     const day = document.querySelector('#day').value
 
     if ((month === 'january') && (day >= 20 && day <= 31) || (month === 'february') && (day >= 1 && day <= 18)) {
@@ -46,16 +46,19 @@ function horoscopeTime() {
         document.querySelector('#zodiacPic').src="images/leo.png"
         document.querySelector('.results').style.backgroundColor = "black"
         document.querySelector('.results').style.color = "#cc3220"
-    } else if ((month === 'august') && (day >= 23 && day <= 31) || (month === 'september') && (day <= 1 && day <= 22)) {
+    } else if ((month === 'august') && (day >= 23 && day <= 31) || (month === 'september') && (day >= 1 && day <= 22)) {
         document.querySelector('#zodiacSign').innerText='Oh hey Virgo'
         document.querySelector('#signDescription').innerText='You\'re an earth sign! Your strengths are loyal, analytical, kind, hardworking, and practical.'
+        document.querySelector('#zodiacPic').src="images/virgo.png"
+        document.querySelector('.results').style.backgroundColor = "black"
+        document.querySelector('.results').style.color = "#e3b75a"
     } else if ((month === 'september') && (day >= 23 && day <= 30) || (month === 'october') && (day >= 1 && day <= 22)) {
         document.querySelector('#zodiacSign').innerText='Hi Libra!'
         document.querySelector('#signDescription').innerText='You\'re an air sign! Your strengths are cooperative, diplomatic, gracious, fair-minded, and social.'
         document.querySelector('#zodiacPic').src="images/libra.png"
         document.querySelector('.results').style.backgroundColor = "black"
         document.querySelector('.results').style.color = "#76a159"
-    } else if ((month === 'october') && ( day <= 23 && day >= 31) || (month === 'november') && (day >= 1 && day >= 21)) {
+    } else if ((month === 'october') && ( day >= 23 && day <= 31) || (month === 'november') && (day >= 1 && day <= 21)) {
         document.querySelector('#zodiacSign').innerText='Snap snap, Scorpio ~'
         document.querySelector('#signDescription').innerText='You\'re a water sign! Your strengths are resourceful, powerful, brave, passionate, and a true friend.'
         document.querySelector('#zodiacPic').src="images/scorpio.png"
