@@ -46,7 +46,7 @@ function horoscopeTime() {
         document.querySelector('#zodiacPic').src="images/leo.png"
         document.querySelector('.results').style.backgroundColor = "black"
         document.querySelector('.results').style.color = "#cc3220"
-    } else if ((month === 'august') && (day >= 23 && day <= 31) || (month === 'september') && (day <= 1 && day <= 22)) {
+    } else if ((month === 'august') && (day >= 23 && day <= 31) || (month === 'september') && (day >= 1 && day <= 22)) {
         document.querySelector('#zodiacSign').innerText='Oh hey Virgo'
         document.querySelector('#signDescription').innerText='You\'re an earth sign! Your strengths are loyal, analytical, kind, hardworking, and practical.'
         document.querySelector('#zodiacPic').src="images/virgo.png"
@@ -58,7 +58,7 @@ function horoscopeTime() {
         document.querySelector('#zodiacPic').src="images/libra.png"
         document.querySelector('.results').style.backgroundColor = "black"
         document.querySelector('.results').style.color = "#76a159"
-    } else if ((month === 'october') && ( day <= 23 && day >= 31) || (month === 'november') && (day >= 1 && day >= 21)) {
+    } else if ((month === 'october') && ( day >= 23 && day <= 31) || (month === 'november') && (day >= 1 && day <= 21)) {
         document.querySelector('#zodiacSign').innerText='Snap snap, Scorpio ~'
         document.querySelector('#signDescription').innerText='You\'re a water sign! Your strengths are resourceful, powerful, brave, passionate, and a true friend.'
         document.querySelector('#zodiacPic').src="images/scorpio.png"
