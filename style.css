@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Courgette', Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    background: url('images/spaceman.jpg');
+}
+
+.topBox {
+     height: 250px;
+     border: 5px solid plum;
+     font-size: 2.5rem;
+     background-color: palevioletred;
+     margin: 0% 15%;
+     color: purple;
+}
+
+button, input {
+    background: papayawhip;
+    border-radius: 7px;
+    height: 35px;
+    width: 30%;
+    margin: 1%;
+    color: purple;
+}
+
+.results {
+    background: palevioletred;
+    border: 5px solid plum;
+    margin: 0% 15%;
+    font-size: 2rem;
+    padding: 0% 5%;
+}
+
+#zodiacSign {
+    font-size: 4rem;
+} 
+
+#zodiacPic {
+    height: 400px;
+}
