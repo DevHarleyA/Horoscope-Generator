@@ -6,7 +6,9 @@
 
 html {
     font-size: 62.5%;
-    background: url('images/spaceman.jpg');
+    background: url('images/bkgdpink.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .topBox {
@@ -18,7 +20,7 @@ html {
      color: purple;
 }
 
-button, input {
+button, select {
     background: papayawhip;
     border-radius: 7px;
     height: 35px;
